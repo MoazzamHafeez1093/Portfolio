@@ -39,8 +39,8 @@ const Header = () => {
     >
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-xl font-bold gradient-text flex items-center gap-2">
-            Portfolio <span className="text-lg">🇵🇰</span>
+          <div className="text-xl font-bold gradient-text">
+            Portfolio
           </div>
 
           {/* Desktop Navigation */}
@@ -57,19 +57,25 @@ const Header = () => {
           </div>
 
           {/* Social Links */}
-          <div className="hidden md:flex items-center space-x-3">
-            <Button variant="ghost" size="icon" asChild className="hover:bg-primary/10 hover:scale-110 transition-all duration-300">
-              <a href="https://github.com/MoazzamHafeez1093" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                <Github className="h-6 w-6 text-primary hover:text-primary/80" />
-                <span className="text-sm font-medium">GitHub</span>
-              </a>
-            </Button>
-            <Button variant="ghost" size="icon" asChild className="hover:bg-blue-500/10 hover:scale-110 transition-all duration-300">
-              <a href="https://www.linkedin.com/in/moazzam-hafeez-aa6a70168/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                <Linkedin className="h-6 w-6 text-blue-500 hover:text-blue-400" />
-                <span className="text-sm font-medium">LinkedIn</span>
-              </a>
-            </Button>
+          <div className="hidden md:flex items-center space-x-2">
+            <a 
+              href="https://github.com/MoazzamHafeez1093" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-primary/10 hover:scale-105 transition-all duration-300 group"
+            >
+              <Github className="h-5 w-5 text-primary group-hover:text-primary/80" />
+              <span className="text-sm font-medium hidden lg:inline">GitHub</span>
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/moazzam-hafeez-aa6a70168/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-blue-500/10 hover:scale-105 transition-all duration-300 group"
+            >
+              <Linkedin className="h-5 w-5 text-blue-500 group-hover:text-blue-400" />
+              <span className="text-sm font-medium hidden lg:inline">LinkedIn</span>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -96,19 +102,25 @@ const Header = () => {
                   {item.label}
                 </button>
               ))}
-              <div className="flex items-center space-x-4 pt-4">
-                <Button variant="ghost" size="icon" asChild className="hover:bg-primary/10 hover:scale-110 transition-all duration-300">
-                  <a href="https://github.com/MoazzamHafeez1093" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                    <Github className="h-6 w-6 text-primary hover:text-primary/80" />
-                    <span className="text-sm font-medium">GitHub</span>
-                  </a>
-                </Button>
-                <Button variant="ghost" size="icon" asChild className="hover:bg-blue-500/10 hover:scale-110 transition-all duration-300">
-                  <a href="https://www.linkedin.com/in/moazzam-hafeez-aa6a70168/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                    <Linkedin className="h-6 w-6 text-blue-500 hover:text-blue-400" />
-                    <span className="text-sm font-medium">LinkedIn</span>
-                  </a>
-                </Button>
+              <div className="flex flex-col space-y-3 pt-4">
+                <a 
+                  href="https://github.com/MoazzamHafeez1093" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-primary/10 hover:scale-105 transition-all duration-300 group"
+                >
+                  <Github className="h-5 w-5 text-primary group-hover:text-primary/80" />
+                  <span className="text-sm font-medium">GitHub</span>
+                </a>
+                <a 
+                  href="https://www.linkedin.com/in/moazzam-hafeez-aa6a70168/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-blue-500/10 hover:scale-105 transition-all duration-300 group"
+                >
+                  <Linkedin className="h-5 w-5 text-blue-500 group-hover:text-blue-400" />
+                  <span className="text-sm font-medium">LinkedIn</span>
+                </a>
               </div>
             </div>
           </div>
