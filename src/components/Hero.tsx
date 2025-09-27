@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ChevronDown, Download, Github, Linkedin } from "lucide-react";
+import { ChevronDown, Github, Linkedin } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -41,7 +41,7 @@ const Hero = () => {
             Currently working on Deepfake Detection and designing scalable, production ready systems.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
+          <div className="flex justify-center items-center animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
             <Button 
               variant="hero" 
               size="lg" 
@@ -49,10 +49,6 @@ const Hero = () => {
               onClick={() => scrollToSection("about")}
             >
               Explore My Work
-            </Button>
-            <Button variant="glow" size="lg" className="text-lg px-8">
-              <Download className="mr-2 h-5 w-5" />
-              Download CV
             </Button>
           </div>
 
