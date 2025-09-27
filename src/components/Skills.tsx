@@ -8,7 +8,8 @@ import {
   GitBranch, 
   Cloud,
   Brain,
-  Gamepad2 
+  Gamepad2,
+  Target
 } from "lucide-react";
 
 const Skills = () => {
@@ -16,49 +17,49 @@ const Skills = () => {
     {
       icon: Code,
       title: "Programming Languages",
-      skills: ["Python", "JavaScript", "TypeScript", "Java", "C++", "Go"],
+      skills: ["C++", "Java", "Python", "JavaScript", "SQL", "TypeScript"],
       color: "text-blue-400"
     },
     {
       icon: Globe,
       title: "Web Development",
-      skills: ["React", "Next.js", "Node.js", "Express", "HTML/CSS", "Tailwind CSS"],
+      skills: ["HTML/CSS", "React", "Node.js", "Full-Stack", "Responsive Design", "Figma to Code"],
       color: "text-green-400"
     },
     {
       icon: Database,
-      title: "Database & Backend",
-      skills: ["PostgreSQL", "MongoDB", "Redis", "GraphQL", "REST APIs", "Microservices"],
+      title: "System Programming",
+      skills: ["Socket Programming", "Operating Systems", "Database Design", "File Transfer", "Multiplayer Games"],
       color: "text-purple-400"
     },
     {
       icon: Cloud,
       title: "DevOps & Cloud",
-      skills: ["AWS", "Docker", "Kubernetes", "CI/CD", "Linux", "Nginx"],
+      skills: ["AWS", "Docker", "CI/CD", "Scalable Systems", "Automation", "Production Deployment"],
       color: "text-orange-400"
     },
     {
       icon: GitBranch,
-      title: "Tools & Workflow",
-      skills: ["Git", "GitHub", "VS Code", "Postman", "Figma", "Jira"],
+      title: "Development Tools",
+      skills: ["Git", "GitHub", "VS Code", "Figma", "PSD Conversion", "Client Handling"],
       color: "text-pink-400"
     },
     {
       icon: Brain,
-      title: "AI & Machine Learning",
-      skills: ["TensorFlow", "PyTorch", "Pandas", "NumPy", "Scikit-learn", "OpenCV"],
+      title: "AI & Deep Learning",
+      skills: ["Deepfake Detection", "Deep Learning", "Machine Learning", "AI Research", "Computer Vision"],
       color: "text-cyan-400"
     },
     {
-      icon: Smartphone,
-      title: "Mobile Development",
-      skills: ["React Native", "Flutter", "Swift", "Kotlin", "Java", "iOS", "Android"],
+      icon: Target,
+      title: "Project Domains",
+      skills: ["Chat Applications", "File Transfer Systems", "Multiplayer Games", "Portfolio Websites"],
       color: "text-red-400"
     },
     {
       icon: Gamepad2,
-      title: "Interests & Hobbies",
-      skills: ["UI/UX Design", "Open Source", "Tech Blogging", "Competitive Programming"],
+      title: "Sports & Leadership",
+      skills: ["Football", "Cricket", "Team Leadership", "Teamwork", "Problem Solving"],
       color: "text-yellow-400"
     }
   ];

@@ -11,66 +11,71 @@ const About = () => {
               About Me
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              I'm a dedicated Computer Science student from Pakistan 🇵🇰 with a passion for technology and innovation. 
-              My journey in programming started with curiosity and has evolved into a deep commitment to creating impactful solutions.
+              Hello, I'm Muhammad Moazzam Hafeez, a Computer Science student at FAST NUCES, Islamabad, graduating in 2026. 
+              I've always believed that technology is more than code—it's about solving problems, building reliable systems, and creating impact.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Story Section */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold mb-4">My Story</h3>
+              <h3 className="text-2xl font-semibold mb-4">My Journey</h3>
               <p className="text-muted-foreground leading-relaxed">
-                From writing my first "Hello World" program to diving deep into complex algorithms and data structures, 
-                my journey in computer science has been filled with constant learning and discovery. Based in Pakistan, 
-                I believe that technology has the power to solve real-world problems and make a positive impact on society.
+                My journey started with programming in <strong>C++ and Java</strong>, but curiosity soon led me to explore 
+                <strong> Python, SQL, web technologies, and system-level concepts</strong>. Since then, I've built projects across different domains: 
+                <strong> databases, operating systems, socket programming (chat apps, file transfer, multiplayer games), and full-stack development</strong>. 
+                Each project taught me not only new technical skills but also patience, persistence, and the value of working in teams.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Currently pursuing my degree in Computer Science, I'm actively expanding my knowledge through 
-                various projects, certifications, and hands-on experience. My goal is to become a well-rounded 
-                software engineer who can contribute meaningfully to innovative projects.
+                Right now, my focus is on two fronts: my <strong>Final Year Project on Deepfake Detection</strong>, where I'm diving into AI and deep learning, 
+                and my <strong>DevOps + Cloud roadmap</strong>, where I'm learning how to design scalable, automated, and production-ready systems. 
+                I also freelance, turning <strong>Figma/PSD designs into responsive websites</strong>, which sharpens both my technical and client-handling skills.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Outside of academics, I enjoy football and cricket, which have shaped my teamwork and leadership abilities. 
+                Whether it's on the field or in front of a laptop, I thrive on challenges and continuous growth.
               </p>
             </div>
 
-            {/* Motivations Grid */}
+            {/* Goals & Focus Areas */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <Card className="p-6 glow-card">
                 <div className="flex items-center mb-4">
                   <Code2 className="h-8 w-8 text-primary mr-3" />
-                  <h4 className="text-lg font-semibold">Clean Code</h4>
+                  <h4 className="text-lg font-semibold">AI/ML Research</h4>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Writing maintainable, efficient, and elegant code that stands the test of time.
+                  Deepfake Detection project and exploring deep learning to build innovative AI solutions.
                 </p>
               </Card>
 
               <Card className="p-6 glow-card">
                 <div className="flex items-center mb-4">
                   <Target className="h-8 w-8 text-primary mr-3" />
-                  <h4 className="text-lg font-semibold">Problem Solving</h4>
+                  <h4 className="text-lg font-semibold">DevOps & Cloud</h4>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Breaking down complex problems into manageable solutions through logical thinking.
+                  Designing scalable, automated, and production-ready systems for reliable deployment.
                 </p>
               </Card>
 
               <Card className="p-6 glow-card">
                 <div className="flex items-center mb-4">
                   <Lightbulb className="h-8 w-8 text-primary mr-3" />
-                  <h4 className="text-lg font-semibold">Innovation</h4>
+                  <h4 className="text-lg font-semibold">Full-Stack Development</h4>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Exploring new technologies and approaches to create innovative solutions.
+                  Converting Figma/PSD designs into responsive websites with modern technologies.
                 </p>
               </Card>
 
               <Card className="p-6 glow-card">
                 <div className="flex items-center mb-4">
                   <Heart className="h-8 w-8 text-primary mr-3" />
-                  <h4 className="text-lg font-semibold">Impact</h4>
+                  <h4 className="text-lg font-semibold">Team Leadership</h4>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Building technology that makes a positive difference in people's lives.
+                  Football and cricket have shaped my teamwork and leadership abilities in tech projects.
                 </p>
               </Card>
             </div>
