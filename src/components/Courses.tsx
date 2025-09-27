@@ -4,34 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, BookOpen, Clock, Star, Award, Eye } from "lucide-react";
 
 const Courses = () => {
-  const courses = [
-    {
-      title: "Complete Web Development Bootcamp",
-      provider: "Udemy",
-      instructor: "Dr. Angela Yu",
-      duration: "65 hours",
-      rating: 4.8,
-      completionDate: "2024",
-      description: "Full-stack web development course covering HTML, CSS, JavaScript, Node.js, React, and databases",
-      skills: ["HTML/CSS", "JavaScript", "React", "Node.js", "MongoDB"],
-      certificateUrl: "#",
-      courseUrl: "#",
-      type: "course"
-    },
-    {
-      title: "Machine Learning Specialization",
-      provider: "Coursera",
-      instructor: "Andrew Ng",
-      duration: "3 months",
-      rating: 4.9,
-      completionDate: "2023",
-      description: "Comprehensive machine learning course covering supervised and unsupervised learning algorithms",
-      skills: ["Python", "TensorFlow", "Scikit-learn", "Linear Algebra", "Statistics"],
-      certificateUrl: "#",
-      courseUrl: "#",
-      type: "course"
-    }
-  ];
+  const courses = [];
 
   const certificates = [
     {
@@ -104,10 +77,10 @@ const Courses = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
-              Courses & Certifications
+              Certifications
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Continuous learning journey through comprehensive courses and professional certifications
+              Professional certifications and verified achievements demonstrating expertise in various technologies
             </p>
           </div>
 
@@ -218,7 +191,7 @@ const Courses = () => {
 
           <div className="text-center mt-12">
             <p className="text-muted-foreground mb-4">
-              All courses and certifications completed with verification links available for each achievement.
+              All certifications completed with verification links available for each achievement.
             </p>
           </div>
         </div>
