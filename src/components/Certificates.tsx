@@ -4,7 +4,6 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Award, Calendar } from "lucide-react";
 
 const Certificates = () => {
-  // Placeholder certificate data - user will replace with their actual certificates
   const certificates = [
     {
       title: "AWS Solutions Architect Associate",
@@ -12,8 +11,8 @@ const Certificates = () => {
       date: "2024",
       description: "Comprehensive certification covering AWS cloud architecture and services",
       skills: ["AWS", "Cloud Computing", "Architecture", "Security"],
-      verifyUrl: "#", // User will add their actual verification link
-      imageUrl: "/placeholder.svg" // User will add their certificate image
+      verifyUrl: "#",
+      imageUrl: "/placeholder.svg"
     },
     {
       title: "Google Cloud Professional Developer",
@@ -81,7 +80,6 @@ const Certificates = () => {
                 {/* Certificate Image */}
                 <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
                   <Award className="h-16 w-16 text-primary/60" />
-                  {/* User can replace this with: <img src={cert.imageUrl} alt={cert.title} className="w-full h-full object-cover" /> */}
                 </div>
                 
                 <div className="p-6">
@@ -122,9 +120,6 @@ const Certificates = () => {
           <div className="text-center mt-12">
             <p className="text-muted-foreground mb-4">
               Want to verify these certificates? Click the verification links on each certificate card.
-            </p>
-            <p className="text-sm text-muted-foreground italic">
-              Note: Replace placeholder content with your actual certificates, images, and verification links
             </p>
           </div>
         </div>

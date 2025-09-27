@@ -4,7 +4,6 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, BookOpen, Clock, Star } from "lucide-react";
 
 const Courses = () => {
-  // Placeholder course data - user will replace with their actual courses
   const courses = [
     {
       title: "Complete Web Development Bootcamp",
@@ -167,9 +166,6 @@ const Courses = () => {
           <div className="text-center mt-12">
             <p className="text-muted-foreground mb-4">
               All courses completed with certificates of completion available for verification.
-            </p>
-            <p className="text-sm text-muted-foreground italic">
-              Note: Replace placeholder content with your actual course certificates and links
             </p>
           </div>
         </div>
