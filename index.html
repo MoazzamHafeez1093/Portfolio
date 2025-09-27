@@ -8,22 +8,15 @@
     <meta name="author" content="Muhammad Moazzam Hafeez" />
     <meta name="keywords" content="Muhammad Moazzam Hafeez, computer science, software engineer, full stack developer, portfolio, programming, web development, AI, machine learning, Pakistan" />
     
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://moazzamhafeez1093.github.io/Portfolio" />
-
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://moazzamhafeez1093.github.io/Portfolio" />
     <meta property="og:title" content="Muhammad Moazzam Hafeez - CS Student & Software Engineer Portfolio" />
     <meta property="og:description" content="Computer Science student and aspiring software engineer from Pakistan specializing in full-stack development, AI/ML, and cloud technologies. View my projects, certificates, and achievements." />
-    <meta property="og:image" content="https://moazzamhafeez1093.github.io/Portfolio/og-image.jpg" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://moazzamhafeez1093.github.io/Portfolio" />
     <meta property="twitter:title" content="Muhammad Moazzam Hafeez - CS Student & Software Engineer Portfolio" />
     <meta property="twitter:description" content="Computer Science student and aspiring software engineer from Pakistan specializing in full-stack development, AI/ML, and cloud technologies. View my projects, certificates, and achievements." />
-    <meta property="twitter:image" content="https://moazzamhafeez1093.github.io/Portfolio/og-image.jpg" />
 
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,19 +32,6 @@
 
   <body>
     <div id="root"></div>
-    <script>
-      // GitHub Pages SPA redirect
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
-    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
