@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -24,33 +25,59 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for your message. I'll get back to you soon!",
-    });
-    setFormData({ name: "", email: "", subject: "", message: "" });
+    
+    try {
+      // EmailJS configuration - you'll need to replace these with your actual EmailJS credentials
+      const serviceId = 'service_your_service_id'; // Replace with your EmailJS service ID
+      const templateId = 'template_your_template_id'; // Replace with your EmailJS template ID
+      const publicKey = 'your_public_key'; // Replace with your EmailJS public key
+      
+      // Prepare template parameters
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_email: 'moazzaam21@gmail.com', // Your email address
+      };
+
+      // Send email using EmailJS
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for your message. I'll get back to you soon!",
+      });
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again or contact me directly at moazzaam21@gmail.com",
+        variant: "destructive",
+      });
+    }
   };
 
   const contactInfo = [
     {
       icon: Mail,
       label: "Email",
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com"
+      value: "moazzaam21@gmail.com",
+      href: "mailto:moazzaam21@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+92 300 1234567",
+      href: "tel:+923001234567"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Your City, Country",
+      value: "Pakistan",
       href: "#"
     }
   ];
@@ -59,20 +86,14 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/yourusername",
+      href: "https://github.com/MoazzamHafeez1093",
       color: "hover:text-gray-400"
     },
     {
       icon: Linkedin,
       label: "LinkedIn", 
-      href: "https://linkedin.com/in/yourusername",
+      href: "https://www.linkedin.com/in/moazzam-hafeez-aa6a70168/",
       color: "hover:text-blue-400"
-    },
-    {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://twitter.com/yourusername",
-      color: "hover:text-sky-400"
     }
   ];
 
@@ -169,7 +190,7 @@ const Contact = () => {
                         id="email"
                         name="email"
                         type="email"
-                        placeholder="your.email@example.com"
+                        placeholder="moazzaam21@gmail.com"
                         value={formData.email}
                         onChange={handleInputChange}
                         required

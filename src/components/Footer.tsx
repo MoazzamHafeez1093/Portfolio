@@ -9,10 +9,10 @@ const Footer = () => {
             <span className="text-muted-foreground">Made with</span>
             <Heart className="h-4 w-4 text-red-500 fill-current animate-pulse" />
             <span className="text-muted-foreground">by</span>
-            <span className="font-semibold gradient-text">Your Name</span>
+            <span className="font-semibold gradient-text">Muhammad Moazzam Hafeez</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Muhammad Moazzam Hafeez. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground mt-2">
             Built with React, TypeScript, and Tailwind CSS

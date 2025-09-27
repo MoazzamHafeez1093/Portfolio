@@ -26,7 +26,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 z-10 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">
-            Hi, I'm <span className="gradient-text">Your Name</span>
+            Hi, I'm <span className="gradient-text">Muhammad Moazzam Hafeez</span>
           </h1>
           
           <h2 className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
