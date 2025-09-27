@@ -87,17 +87,17 @@ const Certificates = () => {
             {certificates.map((cert, index) => (
               <Card key={index} className="group glow-card overflow-hidden">
                 {/* Certificate Image */}
-                <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center overflow-hidden">
+                <div className="h-48 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center overflow-hidden">
                   <img 
                     src={cert.imageUrl} 
                     alt={cert.title} 
-                    className="w-full h-full object-cover"
+                    className="h-full w-auto object-contain max-w-full"
                     onError={(e) => {
                       e.currentTarget.style.display = 'none';
                       e.currentTarget.nextElementSibling.style.display = 'flex';
                     }}
                   />
-                  <div className="hidden aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 items-center justify-center">
+                  <div className="hidden h-48 bg-gradient-to-br from-primary/20 to-secondary/20 items-center justify-center">
                     <Award className="h-16 w-16 text-primary/60" />
                   </div>
                 </div>

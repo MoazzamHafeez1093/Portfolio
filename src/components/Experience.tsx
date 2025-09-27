@@ -6,22 +6,22 @@ import { ExternalLink, Briefcase, Calendar, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Software Development Intern",
+      title: "AI Intern",
       company: "Code Alpha",
       location: "Remote",
-      duration: "2024",
-      description: "Completed comprehensive software development internship focusing on modern web technologies and best practices",
-      skills: ["Web Development", "React", "JavaScript", "Git", "Agile"],
+      duration: "Oct 2024 - Present",
+      description: "Currently working as an AI Intern at Code Alpha, focusing on artificial intelligence projects and machine learning implementations",
+      skills: ["Artificial Intelligence", "Machine Learning", "Python", "Data Science", "AI Tools"],
       imageUrl: "/code_apha_offerletter.png",
       verifyUrl: "#"
     },
     {
-      title: "Internship Completion",
-      company: "Professional Development Program",
+      title: "Web Development Intern",
+      company: "DevelopersHub",
       location: "Remote",
-      duration: "2024",
-      description: "Successfully completed professional internship program with focus on practical software development skills",
-      skills: ["Professional Development", "Team Collaboration", "Project Management", "Problem Solving"],
+      duration: "June 2024 - July 2024",
+      description: "Completed 2-month intensive web development internship focusing on modern frontend and backend technologies",
+      skills: ["Web Development", "HTML/CSS", "JavaScript", "React", "Node.js", "Database Management"],
       imageUrl: "/internship_completion.jpeg",
       verifyUrl: "#"
     }
@@ -44,17 +44,17 @@ const Experience = () => {
             {experiences.map((exp, index) => (
               <Card key={index} className="group glow-card overflow-hidden">
                 {/* Experience Image */}
-                <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center overflow-hidden">
+                <div className="h-48 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center overflow-hidden">
                   <img 
                     src={exp.imageUrl} 
                     alt={exp.title} 
-                    className="w-full h-full object-cover"
+                    className="h-full w-auto object-contain max-w-full"
                     onError={(e) => {
                       e.currentTarget.style.display = 'none';
                       e.currentTarget.nextElementSibling.style.display = 'flex';
                     }}
                   />
-                  <div className="hidden aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 items-center justify-center">
+                  <div className="hidden h-48 bg-gradient-to-br from-primary/20 to-secondary/20 items-center justify-center">
                     <Briefcase className="h-16 w-16 text-primary/60" />
                   </div>
                 </div>
