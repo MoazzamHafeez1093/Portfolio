@@ -6,58 +6,67 @@ import { ExternalLink, Award, Calendar } from "lucide-react";
 const Certificates = () => {
   const certificates = [
     {
-      title: "AWS Solutions Architect Associate",
+      title: "AWS Educate Introduction to Cloud 101",
       issuer: "Amazon Web Services",
       date: "2024",
-      description: "Comprehensive certification covering AWS cloud architecture and services",
-      skills: ["AWS", "Cloud Computing", "Architecture", "Security"],
+      description: "Comprehensive introduction to cloud computing concepts and AWS services",
+      skills: ["AWS", "Cloud Computing", "Cloud Fundamentals", "AWS Services"],
       verifyUrl: "#",
-      imageUrl: "/placeholder.svg"
+      imageUrl: "/aws-educate-introduction-to-cloud-101 (1).png"
     },
     {
-      title: "Google Cloud Professional Developer",
-      issuer: "Google Cloud",
-      date: "2023",
-      description: "Professional-level certification for cloud application development",
-      skills: ["GCP", "Cloud Development", "Kubernetes", "APIs"],
+      title: "DevOps Fundamentals",
+      issuer: "Professional Certification Body",
+      date: "2024",
+      description: "Essential DevOps practices and methodologies for modern software development",
+      skills: ["DevOps", "CI/CD", "Automation", "Infrastructure"],
       verifyUrl: "#",
-      imageUrl: "/placeholder.svg"
+      imageUrl: "/devops.png"
     },
     {
-      title: "Meta Front-End Developer Certificate",
-      issuer: "Meta (Facebook)",
-      date: "2023",
-      description: "Complete front-end development program with hands-on projects",
-      skills: ["React", "JavaScript", "HTML/CSS", "UI/UX"],
+      title: "HTML & CSS Web Development",
+      issuer: "Web Development Institute",
+      date: "2024",
+      description: "Complete web development fundamentals with HTML and CSS",
+      skills: ["HTML", "CSS", "Web Development", "Frontend"],
       verifyUrl: "#",
-      imageUrl: "/placeholder.svg"
+      imageUrl: "/html_css.png"
     },
     {
-      title: "Microsoft Azure AI Fundamentals",
-      issuer: "Microsoft",
-      date: "2023",
-      description: "Foundational knowledge of AI and machine learning services on Azure",
-      skills: ["Azure", "AI/ML", "Cognitive Services", "Python"],
+      title: "Introduction to Generative AI",
+      issuer: "AI Learning Platform",
+      date: "2024",
+      description: "Comprehensive course on generative artificial intelligence and its applications",
+      skills: ["AI", "Machine Learning", "Generative AI", "Deep Learning"],
       verifyUrl: "#",
-      imageUrl: "/placeholder.svg"
+      imageUrl: "/introtoGenAi.png"
     },
     {
-      title: "Oracle Java SE 11 Developer",
-      issuer: "Oracle",
-      date: "2022",
-      description: "Professional Java development certification with advanced concepts",
-      skills: ["Java", "OOP", "Data Structures", "Algorithms"],
+      title: "Python Programming for Everybody",
+      issuer: "University of Michigan",
+      date: "2024",
+      description: "Complete Python programming course covering fundamentals to advanced concepts",
+      skills: ["Python", "Programming", "Data Structures", "Algorithms"],
       verifyUrl: "#",
-      imageUrl: "/placeholder.svg"
+      imageUrl: "/programmingforeverybody_python.png"
     },
     {
-      title: "CompTIA Security+",
-      issuer: "CompTIA",
-      date: "2022",
-      description: "Industry-standard certification for cybersecurity fundamentals",
-      skills: ["Cybersecurity", "Network Security", "Risk Management", "Compliance"],
+      title: "SQL Database Management",
+      issuer: "Database Certification Institute",
+      date: "2024",
+      description: "Comprehensive SQL database management and query optimization",
+      skills: ["SQL", "Database", "Data Management", "Query Optimization"],
       verifyUrl: "#",
-      imageUrl: "/placeholder.svg"
+      imageUrl: "/sql.png"
+    },
+    {
+      title: "Unity Game Development Workshop",
+      issuer: "Game Development Academy",
+      date: "2024",
+      description: "Hands-on workshop for Unity game development and 3D programming",
+      skills: ["Unity", "Game Development", "C#", "3D Programming"],
+      verifyUrl: "#",
+      imageUrl: "/unity_workshop.png"
     }
   ];
 
@@ -78,8 +87,19 @@ const Certificates = () => {
             {certificates.map((cert, index) => (
               <Card key={index} className="group glow-card overflow-hidden">
                 {/* Certificate Image */}
-                <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-                  <Award className="h-16 w-16 text-primary/60" />
+                <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center overflow-hidden">
+                  <img 
+                    src={cert.imageUrl} 
+                    alt={cert.title} 
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                      e.currentTarget.nextElementSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="hidden aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 items-center justify-center">
+                    <Award className="h-16 w-16 text-primary/60" />
+                  </div>
                 </div>
                 
                 <div className="p-6">
