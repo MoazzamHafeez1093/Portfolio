@@ -15,7 +15,7 @@ const Footer = () => {
             © {new Date().getFullYear()} Muhammad Moazzam Hafeez. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground mt-2">
-            Built with React, TypeScript, and Tailwind CSS
+            Built with React, TypeScript, and Tailwind CSS | 🇵🇰 Pakistan
           </p>
         </div>
       </div>

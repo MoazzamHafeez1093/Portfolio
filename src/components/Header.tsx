@@ -39,8 +39,8 @@ const Header = () => {
     >
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-xl font-bold gradient-text">
-            Portfolio
+          <div className="text-xl font-bold gradient-text flex items-center gap-2">
+            Portfolio <span className="text-lg">🇵🇰</span>
           </div>
 
           {/* Desktop Navigation */}

@@ -71,8 +71,8 @@ const Contact = () => {
     {
       icon: Phone,
       label: "Phone",
-      value: "+92 300 1234567",
-      href: "tel:+923001234567"
+      value: "+92 336 222 0642",
+      href: "tel:+923362220642"
     },
     {
       icon: MapPin,

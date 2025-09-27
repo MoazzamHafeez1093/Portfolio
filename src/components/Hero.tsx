@@ -31,6 +31,9 @@ const Hero = () => {
           
           <h2 className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
             Computer Science Student & Aspiring Software Engineer
+            <span className="block text-lg mt-2">
+              🇵🇰 Based in Pakistan
+            </span>
           </h2>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.4s" }}>

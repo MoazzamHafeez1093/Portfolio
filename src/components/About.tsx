@@ -11,7 +11,7 @@ const About = () => {
               About Me
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              I'm a dedicated Computer Science student with a passion for technology and innovation. 
+              I'm a dedicated Computer Science student from Pakistan 🇵🇰 with a passion for technology and innovation. 
               My journey in programming started with curiosity and has evolved into a deep commitment to creating impactful solutions.
             </p>
           </div>
@@ -22,8 +22,8 @@ const About = () => {
               <h3 className="text-2xl font-semibold mb-4">My Story</h3>
               <p className="text-muted-foreground leading-relaxed">
                 From writing my first "Hello World" program to diving deep into complex algorithms and data structures, 
-                my journey in computer science has been filled with constant learning and discovery. I believe that 
-                technology has the power to solve real-world problems and make a positive impact on society.
+                my journey in computer science has been filled with constant learning and discovery. Based in Pakistan, 
+                I believe that technology has the power to solve real-world problems and make a positive impact on society.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Currently pursuing my degree in Computer Science, I'm actively expanding my knowledge through 
