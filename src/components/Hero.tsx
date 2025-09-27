@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ChevronDown, Download } from "lucide-react";
+import { ChevronDown, Download, Github, Linkedin } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -54,6 +54,28 @@ const Hero = () => {
               <Download className="mr-2 h-5 w-5" />
               Download CV
             </Button>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex justify-center space-x-6 mt-8 animate-fade-in-up" style={{ animationDelay: "0.8s" }}>
+            <a
+              href="https://github.com/MoazzamHafeez1093"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-3 rounded-lg bg-card/50 border border-border hover:border-primary hover:scale-110 transition-all duration-300 group"
+            >
+              <Github className="h-6 w-6 text-primary group-hover:text-primary/80" />
+              <span className="font-medium">GitHub</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/moazzam-hafeez-aa6a70168/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-3 rounded-lg bg-card/50 border border-border hover:border-blue-500 hover:scale-110 transition-all duration-300 group"
+            >
+              <Linkedin className="h-6 w-6 text-blue-500 group-hover:text-blue-400" />
+              <span className="font-medium">LinkedIn</span>
+            </a>
           </div>
         </div>
       </div>

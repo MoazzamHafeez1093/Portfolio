@@ -139,26 +139,25 @@ const Contact = () => {
               {/* Social Links */}
               <Card className="p-6 glow-card">
                 <h4 className="font-semibold mb-4">Follow Me</h4>
-                <div className="flex space-x-4">
+                <div className="flex flex-col space-y-3">
                   {socialLinks.map((social, index) => {
                     const IconComponent = social.icon;
                     return (
-                      <Button
+                      <a
                         key={index}
-                        variant="ghost"
-                        size="icon"
-                        className={`${social.color} transition-colors duration-300`}
-                        asChild
+                        href={social.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`flex items-center gap-3 p-4 rounded-lg bg-card border border-border hover:border-primary hover:scale-105 transition-all duration-300 ${social.color} group`}
                       >
-                        <a 
-                          href={social.href} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          title={social.label}
-                        >
-                          <IconComponent className="h-5 w-5" />
-                        </a>
-                      </Button>
+                        <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
+                          <IconComponent className="h-6 w-6" />
+                        </div>
+                        <div>
+                          <p className="font-medium">{social.label}</p>
+                          <p className="text-sm text-muted-foreground">Visit my profile</p>
+                        </div>
+                      </a>
                     );
                   })}
                 </div>
