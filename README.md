@@ -1,73 +1,180 @@
-# Welcome to your Lovable project
+# Muhammad Moazzam Hafeez - Portfolio
 
-## Project info
+A modern, responsive portfolio website showcasing my work as a Computer Science student and aspiring Software Engineer.
 
-**URL**: https://lovable.dev/projects/03fcbea6-0390-4cde-8d9c-40d0c95c0f80
+## 🌟 Live Demo
 
-## How can I edit this code?
+- **GitHub Pages**: [https://moazzamhafeez1093.github.io/Portfolio](https://moazzamhafeez1093.github.io/Portfolio)
+- **Vercel**: [Deploy to Vercel](https://vercel.com/new/clone?repository-url=https://github.com/MoazzamHafeez1093/Portfolio)
 
-There are several ways of editing your application.
+## 🚀 Features
 
-**Use Lovable**
+- **Modern Design**: Clean, professional interface with smooth animations
+- **Responsive Layout**: Optimized for all devices (desktop, tablet, mobile)
+- **Interactive Sections**:
+  - Hero section with call-to-action
+  - About section with personal story
+  - Work Experience showcase
+  - Skills & Technologies
+  - Certifications with verification links
+  - Workshops & Training
+  - Contact form with EmailJS integration
+- **Dark/Light Theme**: Automatic theme detection
+- **Performance Optimized**: Fast loading with Vite build system
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/03fcbea6-0390-4cde-8d9c-40d0c95c0f80) and start prompting.
+## 🛠️ Technologies Used
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend**: React 18, TypeScript
+- **Styling**: Tailwind CSS, shadcn/ui components
+- **Build Tool**: Vite
+- **Routing**: React Router
+- **Icons**: Lucide React
+- **Email Service**: EmailJS
+- **Deployment**: GitHub Pages, Vercel
 
-**Use your preferred IDE**
+## 📁 Project Structure
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # shadcn/ui components
+│   ├── Header.tsx      # Navigation header
+│   ├── Hero.tsx        # Hero section
+│   ├── About.tsx       # About section
+│   ├── Experience.tsx  # Work experience
+│   ├── Skills.tsx      # Skills showcase
+│   ├── Courses.tsx     # Certifications
+│   ├── Workshops.tsx   # Workshops & training
+│   ├── Contact.tsx     # Contact form
+│   └── Footer.tsx      # Footer
+├── pages/              # Page components
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+└── assets/             # Static assets
 ```
 
-**Edit a file directly in GitHub**
+## 🚀 Getting Started
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Prerequisites
 
-**Use GitHub Codespaces**
+- Node.js (v18 or higher)
+- npm or yarn
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Installation
 
-## What technologies are used for this project?
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/MoazzamHafeez1093/Portfolio.git
+   cd Portfolio
+   ```
 
-This project is built with:
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-## How can I deploy this project?
+4. **Open your browser**
+   Navigate to `http://localhost:8080` or `http://localhost:8081`
 
-Simply open [Lovable](https://lovable.dev/projects/03fcbea6-0390-4cde-8d9c-40d0c95c0f80) and click on Share -> Publish.
+### Available Scripts
 
-## Can I connect a custom domain to my Lovable project?
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
 
-Yes, you can!
+## 📧 Email Configuration
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+The contact form uses EmailJS for sending emails. To set it up:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+1. Create an EmailJS account at [emailjs.com](https://emailjs.com)
+2. Create a service and template
+3. Update the credentials in `src/components/Contact.tsx`:
+   ```typescript
+   const serviceId = 'your_service_id';
+   const templateId = 'your_template_id';
+   const publicKey = 'your_public_key';
+   ```
+
+## 🌐 Deployment
+
+### GitHub Pages
+
+1. Push your code to the `master` branch
+2. GitHub Actions will automatically build and deploy
+3. Your site will be available at `https://yourusername.github.io/Portfolio`
+
+### Vercel
+
+1. Import your repository to Vercel
+2. Deploy automatically on every push
+3. Get a custom domain and HTTPS
+
+### Netlify
+
+1. Connect your GitHub repository
+2. Build settings:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+
+## 🎨 Customization
+
+### Personal Information
+
+Update the following files with your information:
+
+- `src/components/Hero.tsx` - Name, title, description
+- `src/components/About.tsx` - Personal story
+- `src/components/Contact.tsx` - Contact details
+- `src/components/Experience.tsx` - Work experience
+- `src/components/Courses.tsx` - Certifications
+- `src/components/Skills.tsx` - Skills and technologies
+
+### Styling
+
+- Colors: Update `tailwind.config.ts`
+- Fonts: Modify `index.html` and `src/index.css`
+- Components: Edit individual component files
+
+## 📱 Responsive Design
+
+The portfolio is fully responsive with breakpoints:
+- Mobile: < 768px
+- Tablet: 768px - 1024px
+- Desktop: > 1024px
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👨‍💻 About Me
+
+**Muhammad Moazzam Hafeez**
+- Computer Science Student at FAST NUCES, Islamabad
+- Graduating 2026
+- Focus Areas: AI/ML Research, DevOps & Cloud Engineering
+- Location: Pakistan 🇵🇰
+
+## 📞 Contact
+
+- **Email**: moazzaam21@gmail.com
+- **GitHub**: [@MoazzamHafeez1093](https://github.com/MoazzamHafeez1093)
+- **LinkedIn**: [moazzam-hafeez-aa6a70168](https://www.linkedin.com/in/moazzam-hafeez-aa6a70168/)
+- **Phone**: +92 336 222 0642
+
+---
+
+⭐ **Star this repository if you found it helpful!**
