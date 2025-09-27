@@ -4,8 +4,9 @@ A modern, responsive portfolio website showcasing my work as a Computer Science 
 
 ## 🌟 Live Demo
 
+- **Vercel**: [https://moazzamportfolio.vercel.app/](https://moazzamportfolio.vercel.app/) 🚀
 - **GitHub Pages**: [https://moazzamhafeez1093.github.io/Portfolio](https://moazzamhafeez1093.github.io/Portfolio)
-- **Vercel**: [Deploy to Vercel](https://vercel.com/new/clone?repository-url=https://github.com/MoazzamHafeez1093/Portfolio)
+- **Deploy to Vercel**: [One-click deploy](https://vercel.com/new/clone?repository-url=https://github.com/MoazzamHafeez1093/Portfolio)
 
 ## 🚀 Features
 
@@ -103,17 +104,20 @@ The contact form uses EmailJS for sending emails. To set it up:
 
 ## 🌐 Deployment
 
+### Vercel (Recommended) ✅
+
+**Live Site**: [https://moazzamportfolio.vercel.app/](https://moazzamportfolio.vercel.app/)
+
+1. Import your repository to Vercel
+2. Deploy automatically on every push
+3. Get a custom domain and HTTPS
+4. **Current Status**: Successfully deployed and live!
+
 ### GitHub Pages
 
 1. Push your code to the `master` branch
 2. GitHub Actions will automatically build and deploy
 3. Your site will be available at `https://yourusername.github.io/Portfolio`
-
-### Vercel
-
-1. Import your repository to Vercel
-2. Deploy automatically on every push
-3. Get a custom domain and HTTPS
 
 ### Netlify
 
