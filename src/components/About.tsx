@@ -12,7 +12,7 @@ const About = () => {
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Hello, I'm Muhammad Moazzam Hafeez, a Computer Science student at FAST NUCES, Islamabad, graduating in 2026. 
-              I've always believed that technology is more than code—it's about solving problems, building reliable systems, and creating impact.
+              I've always believed that technology is more than code, it's about solving problems, building reliable systems, and creating impact.
             </p>
           </div>
 
@@ -28,7 +28,7 @@ const About = () => {
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Right now, my focus is on two fronts: my <strong>Final Year Project on Deepfake Detection</strong>, where I'm diving into AI and deep learning, 
-                and my <strong>DevOps + Cloud roadmap</strong>, where I'm learning how to design scalable, automated, and production-ready systems. 
+                and my <strong>DevOps + Cloud roadmap</strong>, where I'm learning how to design scalable, automated, and production ready systems. 
                 I also freelance, turning <strong>Figma/PSD designs into responsive websites</strong>, which sharpens both my technical and client-handling skills.
               </p>
               <p className="text-muted-foreground leading-relaxed">
@@ -55,7 +55,7 @@ const About = () => {
                   <h4 className="text-lg font-semibold">DevOps & Cloud</h4>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Designing scalable, automated, and production-ready systems for reliable deployment.
+                  Designing scalable, automated, and production ready systems for reliable deployment.
                 </p>
               </Card>
 

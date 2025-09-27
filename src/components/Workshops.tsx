@@ -39,7 +39,7 @@ const Workshops = () => {
                   <img 
                     src={workshop.imageUrl} 
                     alt={workshop.title} 
-                    className="h-full w-auto object-contain max-w-full"
+                    className="h-full w-auto object-contain max-w-full transform -rotate-12 hover:rotate-0 transition-transform duration-500"
                     onError={(e) => {
                       e.currentTarget.style.display = 'none';
                       e.currentTarget.nextElementSibling.style.display = 'flex';

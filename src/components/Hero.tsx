@@ -38,7 +38,7 @@ const Hero = () => {
           
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
             Building innovative solutions through AI/ML research and DevOps engineering. 
-            Currently working on Deepfake Detection and designing scalable, production-ready systems.
+            Currently working on Deepfake Detection and designing scalable, production ready systems.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
