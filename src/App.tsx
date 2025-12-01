@@ -6,11 +6,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
+import CustomCursor from "./components/CustomCursor";
+import BackgroundEffects from "./components/BackgroundEffects";
+
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      <CustomCursor />
+      <BackgroundEffects />
       <Toaster />
       <Sonner />
       <BrowserRouter>

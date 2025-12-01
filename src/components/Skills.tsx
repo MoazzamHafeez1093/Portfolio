@@ -1,11 +1,11 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Code, 
-  Database, 
-  Globe, 
-  Smartphone, 
-  GitBranch, 
+import {
+  Code,
+  Database,
+  Globe,
+  Smartphone,
+  GitBranch,
   Cloud,
   Brain,
   Gamepad2,
@@ -35,7 +35,7 @@ const Skills = () => {
     {
       icon: Cloud,
       title: "DevOps & Cloud",
-      skills: ["AWS", "Docker", "CI/CD", "Scalable Systems", "Automation", "Production Deployment"],
+      skills: ["AWS", "Docker", "CI/CD", "Kubernetes", "Terraform", "MLflow", "Airflow", "Prometheus", "Grafana"],
       color: "text-orange-400"
     },
     {
@@ -88,9 +88,9 @@ const Skills = () => {
                   </div>
                   <div className="flex flex-wrap gap-2">
                     {category.skills.map((skill, skillIndex) => (
-                      <Badge 
-                        key={skillIndex} 
-                        variant="secondary" 
+                      <Badge
+                        key={skillIndex}
+                        variant="secondary"
                         className="text-xs hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
                       >
                         {skill}
